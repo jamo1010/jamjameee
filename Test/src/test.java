@@ -3,18 +3,18 @@ import java.util.*;
 
 public class test {
 	String check(List<String> words) {
-		String cc="0";
+		String aa="0";
 		for(int i =0;i<words.size(); i++) {
-			if( words.get(i).charAt(0) > cc.charAt(0))
-				cc = words.get(i);
-			else if( words.get(i).charAt(0) == cc.charAt(0)) {
-				if(cc.length() ==1)
-					cc = words.get(i);
-				if(words.get(i).charAt(1) > cc.charAt(1))
-					cc = words.get(i);
+			if( words.get(i).charAt(0) > aa.charAt(0))
+				aa = words.get(i);
+			else if( words.get(i).charAt(0) == aa.charAt(0)) {
+				if(aa.length() ==1)
+					aa = words.get(i);
+				if(words.get(i).charAt(1) > aa.charAt(1))
+					aa = words.get(i);
 			}
 		}
-		return cc;
+		return aa;
 	}
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
